@@ -75,7 +75,8 @@ public class App {
 
 
 
-
+//what i was trying to figure out was how to combine collumn and row and then add an arrays list but i got stuck when figuing out my 
+//methods and how to declare my varibles. i couldnt really understand my errors either. Thank you!
     public static int columnRowAddition(int[][] arr, int row, int col){
         
         return -1;//placeholder

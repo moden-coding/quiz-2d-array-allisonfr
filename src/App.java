@@ -15,7 +15,7 @@
  *  if we have a 3x3 array and the row input is 1 and the column input is 1, then we should sum (1,0) + (1,1)
  *  + (1,2) + (0,1) + (2,1). You'll notice we did not count (1,1) twice because it exists at the intersection.
  *  
- */
+ */ //make sure that it calls it not working or gove back -1 if someone inputs somehting not possible
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -24,6 +24,7 @@ public class App {
             {1, 2, 3},
             {4, 5, 6},
             {7, 8, 9}
+            
         };
 
         // Examples of valid indices
@@ -54,6 +55,25 @@ public class App {
        
     
     }
+    // int[][] testArray1 = {
+    //     {1, 2, 3},
+    //     {4, 5, 6},
+    //     {7, 8, 9}
+
+    int sum = 0;
+    int roww = row;
+    int columnn = column;
+    for (int i = 0; i < array[roww][columnn].length; i++) {
+        sum += array[roww][columnn] ;
+
+    }
+    return sum;
+
+
+// for (int t = 0; t < array.length; t++) {
+//     sum += array[t][columnn];
+
+
 
 
     public static int columnRowAddition(int[][] arr, int row, int col){
